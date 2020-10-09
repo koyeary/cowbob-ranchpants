@@ -3,6 +3,7 @@ const path          = require('path');
 const bodyParser    = require('body-parser');
 const env           = require('dotenv').config();
 const logger        = require('morgan');
+const nodemailer    = require('nodemailer');
 const session       = require('express-session');
 
 const app = express();
@@ -18,8 +19,8 @@ app.set('view engine', 'handlebars');
 
 //Middleware
 app.use(logger('dev'));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Routes
