@@ -25,6 +25,7 @@
     "express-handlebars": "^5.1.0",
     "express-session": "^1.17.1",
     "googleapis": "^61.0.0",
+    "jquery": "^3.5.1",
     "morgan": "^1.10.0",
     "nodemailer": "^6.4.13",
     "nodemon": "^2.0.4"

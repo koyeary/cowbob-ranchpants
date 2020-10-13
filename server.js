@@ -1,10 +1,9 @@
+require('dotenv').config();
 const express       = require('express');
+const session       = require('express-session');
 const path          = require('path');
 const bodyParser    = require('body-parser');
-const env           = require('dotenv').config();
 const logger        = require('morgan');
-const nodemailer    = require('nodemailer');
-const session       = require('express-session');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
