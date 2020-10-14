@@ -2,8 +2,8 @@ const router = require('express').Router();
 const nodemailer = require('nodemailer');
 const mailController = require('../controllers/mailController');
 
-const GMAIL_USER = /* process.env.GMAIL_USER */ 'kat.o.yeary@gmail.com';
-const GMAIL_PASS = /* process.env.GMAIL_PASS */ 'y3@Ry19520817';
+const YAHOO_USER = /* process.env.GMAIL_USER */ 'kat.yeary@yahoo.com';
+const YAHOO_PASS = /* process.env.GMAIL_PASS */ 'y3@Ry19520817';
 
 //const name = document.getElementById("name").value;
 //const email = document.getElementById("email").value;
@@ -12,51 +12,60 @@ const GMAIL_PASS = /* process.env.GMAIL_PASS */ 'y3@Ry19520817';
 
 router.get('/', mailController.index);
 // POST route from contact form
-router.post('/', (req, res) => {
-
-  // Instantiate the SMTP server
-  /* const transporter = nodemailer.createTransport({     service: 'smtp.gmail.com',
+router.post('/', (req, res, next) => {
+   let transporter = nodemailer.createTransport({
+    service: 'yahoo',
     port: 465,
     secure: true,
     auth: {
-      user: GMAIL_USER,
-      pass: GMAIL_PASS
-    },
-    tls: {
-      rejectUnauthorized: false
-    },
-    debug: true 
+      user: 'kat.yeary@yahoo.com',
+      pass: 'mzmzpdixhrkgzgtw'
+    } 
+  }); 
 
-  }); */
-  console.log(req, res);
+  /*       let transporter = nodemailer.createTransport({
+      host: 'localhost',
+      port: 1025,
+      auth: {
+        user: 'project.1',
+        pass: 'secret.1'
+      }
+    });
+   */
+  /*   let transporter = nodemailer.createTransport({
+      service: 'imap.mail.yahoo.com',
+      port: 993,
+      secure: true
+    }); */
 
-  const transporter = nodemailer.createTransport({
-    host: 'localhost',
-    port: 1025,
-    auth: {
-      user: 'project.1',
-      pass: 'secret.1'
-    }
-  });
-
-/*   const mailObj = {
-    name: res.data.name,
-    email: res.data.email,
-    text: res.data.text
-  } */
+  // Instantiate the SMTP server
+/*       let transporter = nodemailer.createTransport({
+      sendmail: true,
+      newline: 'unix',
+      path: '/usr/sbin/sendmail'
+    });   */
 
   // Specify what the email will look like
   const mailOpts = {
-    from: `${req.body.name} &lt; ${req.body.email} &gt;`, // This is ignored by Gmail
-    to: GMAIL_USER,
+    from: YAHOO_USER, // This is ignored by Gmail
+    to: YAHOO_USER,
     subject: 'New message from your portfolio contact form',
     text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
-  }
+  };
 
+  /*   transporter.verify(function (error, success) {
+      if (error) {
+        console.log('not connecting to smtp');
+      } else {
+        console.log('Server ready to take messages');
+        console.log(mailOpts);
+      }
+    }); */
   // Attempt to send the email
   transporter.sendMail(mailOpts, (error, res) => {
     if (error) {
       //res.render('contact-failure') 
+      console.log(error);
       console.log('Failed contact form attempt: ')
       console.log(mailOpts);
     }
@@ -66,5 +75,4 @@ router.post('/', (req, res) => {
     }
   });
 });
-
 module.exports = router;
