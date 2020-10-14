@@ -1,24 +1,28 @@
 
-    // Send the POST request.
-    $('#mail').on('submit', function() {
-        const name = $('#name').val();
-        const email = $('#email').val();
-        const text = $('#text').val();
 
-        $.ajax("/mail", {
-            type: "POST",
+
+    // Send the POST request.
+    $('.mail').on('click', (e) => {
+        e.preventDefault();
+
+        const name = $('#name').val().trim();
+        const email = $('#email').val().trim();
+        const message = $('#message').val().trim();
+
+         $.ajax("/mail", {
+            method: "POST",
             data: {
                 name: name,
                 email: email,
-                text: text
+                message: message
             }
         }).then(
             function () {
                 console.log("email sent");
                 // Reload the page to get the updated list
-                location.reload();
+                //location.reload();
             }
-        );
+        ); 
     });
 
 /* // Make sure we wait to attach our handlers until the DOM is fully loaded.

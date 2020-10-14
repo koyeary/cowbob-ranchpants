@@ -39,18 +39,18 @@ router.post('/', (req, res) => {
     }
   });
 
-  const mailObj = {
+/*   const mailObj = {
     name: res.data.name,
     email: res.data.email,
     text: res.data.text
-  }
+  } */
 
   // Specify what the email will look like
   const mailOpts = {
-    from: `${mailObj.name} &lt; ${mailObj.email} &gt;`, // This is ignored by Gmail
+    from: `${req.body.name} &lt; ${req.body.email} &gt;`, // This is ignored by Gmail
     to: GMAIL_USER,
     subject: 'New message from your portfolio contact form',
-    text: `${mailObj.name} (${mailObj.email}) says: ${mailObj.text}`
+    text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
   }
 
   // Attempt to send the email
