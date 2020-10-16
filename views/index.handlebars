@@ -1,9 +1,10 @@
 
+{{> header }}
 
-    
-    <h1>Hello World</h1>
-
-
-{{> contact }}
-
+{{#if resume}}
+{{> resume }}
+{{!-- {{else}}
+{{> about}} --}}
+{{/if}}
+{{> about }}
 
