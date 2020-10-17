@@ -1,3 +1,4 @@
+    
     // Send the POST request.
     $('.mail').on('click', (e) => {
         e.preventDefault();
@@ -17,7 +18,8 @@
             function () {
                 console.log('email sent');
                 // Reload the page to get the updated list
-                $('#contact').modal('toggle');
+                location.reload();
+               // $('#contact').modal('toggle');
             }
         ); 
     });

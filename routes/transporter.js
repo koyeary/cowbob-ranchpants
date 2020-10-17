@@ -47,7 +47,7 @@ router.post('/', (req, res, next) => {
     }
     else {
       //res.render('contact-success') 
-      console.log('Successful contact form attempt');
+      console.log('Contact-form attempt successful');
     }
   });
 });
