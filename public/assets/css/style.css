@@ -1,0 +1,9 @@
+.btn-link {
+    color: #ffffff;
+}
+
+.btn-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 1px #ffffff;
+    text-decoration: none;
+}
