@@ -7,3 +7,16 @@
     text-shadow: 0 0 1px #ffffff;
     text-decoration: none;
 }
+
+.resume-body {
+    background-color: #2da892;
+}
+
+.resume-item {
+    padding-top: 15px;
+    padding-bottom: 7px;
+}
+
+.resume-description {
+    font-size: min(max(16px, 4vw), 18px);
+}

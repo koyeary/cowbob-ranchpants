@@ -18,18 +18,9 @@
             function () {
                 console.log('email sent');
                 // Reload the page to get the updated list
-               // $('#contact').modal('toggle');
+               $('#contact').modal('hide');
             }
         ); 
     });
 
-    $('.resume').on('click', function() {
-        $.ajax('/resume', {
-            method: 'GET'
-        }).then(
-            function() {
-                console.log('loaded');
-            }
-        )
-    })
-
+    
