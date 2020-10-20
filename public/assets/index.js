@@ -1,6 +1,6 @@
 $(window).on('scroll', function () {
 
-    if ($(this).scrollTop() >= 700) {
+    if ($(this).scrollTop() >= 200) {
         $('.top').css('background-color', 'white');
         $('.top').addClass('nav-color');
         $('.main').css('color', '#0071eb');
