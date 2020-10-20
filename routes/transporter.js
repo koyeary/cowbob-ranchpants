@@ -2,8 +2,8 @@ const router = require('express').Router();
 const nodemailer = require('nodemailer');
 const mailController = require('../controllers/mailController');
 
-const YAHOO_USER = process.env.GMAIL_USER;
-const YAHOO_PASS = process.env.GMAIL_PASS;
+const YAHOO_USER = process.env.YAHOO_USER;
+const YAHOO_PASS = process.env.YAHOOL_PASS;
 
 
 router.get('/', mailController.index);

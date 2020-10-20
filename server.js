@@ -27,6 +27,6 @@ require('./routes')(app);
 
 //Listener
 app.listen(PORT, () => {
-    console.log(`Congratulations, you are listening on port ${PORT}!!!`);
+    console.log(`Server listening on port ${PORT}`);
 });
 

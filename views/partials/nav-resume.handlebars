@@ -1,0 +1,73 @@
+<nav class="navbar nav-color sticky-top justify-content-start">
+        <ul class="nav">
+                <li class="nav-item">
+                        <a type="button" class="btn btn-link rounded" data-toggle="tooltip" data-placement="right" title="Back to main page" href="/"><i class="fas fa-arrow-left"></i></a>
+                </li>
+                <li class="nav-item">
+                        <a type="button" class="btn btn-link" href="https://github.com/koyeary" target="_blank"><i
+                                        class="fab fa-github mr-3"></i></a>
+                </li>
+                <li class="nav-item">
+                        <a type="button" class="btn btn-link" href="https://www.linkedin.com/in/kat-yeary/"
+                                target="_blank"><i class="fab fa-linkedin-in mr-3"></i></a>
+                </li>
+                <li class="nav-item">
+                        <a type="button" class="btn btn-link" data-toggle="modal" data-target="#contact"><i
+                                        class="fas fa-paper-plane"></i></a>
+                </li>
+        </ul>
+</nav>
+
+<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content px-3">
+                        <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">Say hello.</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                        <form>
+                                <div class="modal-body">
+                                        <div class="form-group">
+                                                <div class="mb-3">
+                                                        <label for="email">Email address</label>
+                                                        <input type="email" class="form-control" id="email"
+                                                                aria-describedby="emailHelp">
+                                                        <small id="emailHelp" class="form-text text-muted">I'll never
+                                                                share your email with anyone
+                                                                else.</small>
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <div class="mb-3">
+                                                        <label for="name">Name</label>
+                                                        <input type="name" class="form-control" id="name">
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <div class="mb-3">
+                                                        <label for="message">Message</label>
+                                                        <textarea type="message" class="form-control" rows="5"
+                                                                id="message"></textarea>
+                                                </div>
+                                        </div>
+                                        <div class="form-group form-check">
+                                                <div class="mb-3">
+                                                        <input type="checkbox" class="form-check-input" id="signUp">
+                                                        <label class="form-check-label" for="signUp">Keep in touch<small
+                                                                        class="pl-3 text-muted">Get
+                                                                        occasional updates about my
+                                                                        projects.</small></label>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary mail">Submit</button>
+                                </div>
+                        </form>
+                </div>
+        </div>
+</div>

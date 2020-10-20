@@ -1,10 +1,57 @@
-.btn-link {
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-image: url('/assets/img/katsbanner.png');
+    background-size: contain;
+    font-family: 'Roboto', sans-serif;
+    color: #4c4d4d;
+}
+
+.header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.sub-header {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Comfortaa', cursive;
+}
+
+#more:hover {
+    background-color: #ffffff;
+    color: #2da892;
+}
+
+.about {
+    color: #2da892;
+}
+
+.about:hover {
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.main {
+    color: #ffffff;
+} 
+
+i {
+    font-size: 20px;
+}
+
+.personal {
     color: #ffffff;
 }
 
-.btn-link:hover {
+.personal:hover {
     color: #ffffff;
-    text-shadow: 0 0 1px #ffffff;
+    text-shadow: 0 0 1.5px #ffffff;
     text-decoration: none;
 }
 
@@ -19,4 +66,23 @@
 
 .resume-description {
     font-size: min(max(16px, 4vw), 18px);
+}
+
+.top {
+    background-color: transparent;
+}
+
+.nav-color {
+    background-color: #ffffff;
+    box-shadow: 0px 0 8px rgba(0, 0, 0, 0.8);
+    transition-duration: .5s;
+}
+
+.footer {
+    box-shadow: 4px 3px 6px 4px rgba(0, 0, 0, 0.8);
+    background-color: #2da892;
+}
+
+.smaller {
+    font-size: 16px;
 }
