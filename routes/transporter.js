@@ -2,8 +2,8 @@ const router = require('express').Router();
 const nodemailer = require('nodemailer');
 const mailController = require('../controllers/mailController');
 
-const YAHOO_USER = process.env.YAHOO_USER;
-const YAHOO_PASS = process.env.YAHOOL_PASS;
+const YAHOO_USER = 'kat.yeary@yahoo.com';
+const YAHOO_PASS = 'mzmzpdixhrkgzgtw';
 
 
 router.get('/', mailController.index);
@@ -41,13 +41,14 @@ router.post('/', (req, res, next) => {
   // Attempt to send the email
   transporter.sendMail(mailOpts, (error, res) => {
     if (error) {
-      //res.render('contact-failure') 
       console.log(error);
-      console.log(`Failed contact form attempt: ${mailOpts}`)
+      console.log(`Failed contact form attempt: ${mailOpts}`);
+      //router.get('/failure'); 
     }
     else {
       //res.render('contact-success') 
       console.log('Contact-form attempt successful');
+      console.log(res.response);
     }
   });
 });
