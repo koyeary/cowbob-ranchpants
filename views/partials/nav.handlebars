@@ -1,22 +1,29 @@
-<nav class="navbar top sticky-top justify-content-start">
-        <ul class="nav">
-                <li class="nav-item">
-                        <a type="button" class="btn btn-link main" href="https://github.com/koyeary" target="_blank"><i
-                                        class="fab fa-github mr-3"></i></a>
-                </li>
-                <li class="nav-item">
-                        <a type="button" class="btn btn-link main" href="https://www.linkedin.com/in/kat-yeary/"
-                                target="_blank"><i class="fab fa-linkedin-in mr-3"></i></a>
-                </li>
-                <li class="nav-item">
-                        <a class="btn btn-link main" href="/resume" data-toggle="tooltip" data-placement="right"
-                                title="Resume"><i class="fas fa-code mr-3"></i></a>
-                </li>
-                <li class="nav-item">
-                        <a class="btn btn-link main" data-toggle="modal" data-target="#contact"><i
-                                class="fas fa-paper-plane mr-2"></i></a>
-                </li>
-        </ul>
+<nav class="navbar navbar-expand-lg top sticky-top justify-content-start">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas-fa-bars toggle-color"></i>
+        </button>
+        <div class="collapse navbar-collapse">
+                <ul class="nav">
+                        <li class="nav-item">
+                                <a type="button" class="btn btn-link toggle-color" href="https://github.com/koyeary"
+                                        target="_blank"><i class="fab fa-github mr-3"></i>GitHub</a>
+                        </li>
+                        <li class="nav-item">
+                                <a type="button" class="btn btn-link toggle-color"
+                                        href="https://www.linkedin.com/in/kat-yeary/" target="_blank"><i
+                                                class="fab fa-linkedin-in mr-3"></i>LinkedIn</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="btn btn-link toggle-color" id="resume" data-toggle="tooltip"
+                                        data-placement="right" title="Resume"><i class="fas fa-code mr-3"></i>Resume</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="btn btn-link toggle-color" data-toggle="modal" data-target="#contact"><i
+                                                class="fas fa-paper-plane mr-2"></i>Contact Me</a>
+                        </li>
+                </ul>
+        </div>
 </nav>
 
 {{> contact }}

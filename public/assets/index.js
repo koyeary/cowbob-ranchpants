@@ -1,17 +1,15 @@
 $(window).on('scroll', function () {
 
-    if ($(this).scrollTop() >= 200) {
+    if ($(this).scrollTop() >= 500) {
         $('.top').css('background-color', 'white');
         $('.top').addClass('nav-color');
-        $('.main').css('color', '#0071eb');
-        //CONTACT IF ELSE
+        $('.toggle-color').css('color', '#0071eb');
 
     } else {
 
         $('.top').css('background-color', 'transparent');
         $('.top').removeClass('nav-color');
-        $('.main').css('color', '#ffffff');
-        //CONTACT IF ELSE
+        $('.toggle-color').css('color', '#ffffff');
     }
 
 });
@@ -28,6 +26,10 @@ $('#github').on('click', function () {
 
 $('#linkedin').on('click', function () {
     window.open('https://www.linkedin.com/in/kat-yeary/');
+})
+
+$('#resume').on('click', function () {
+    window.open('/assets/Resume_2020.pdf');
 })
 
 //Nodemailer request

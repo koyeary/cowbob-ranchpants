@@ -2,37 +2,24 @@
     <div class="row bg-white p-5">
         <div>
             <div class="row mx-auto p-5 text-center">
-                <div class="col">
-                    <h2>See my work.</h2>
-                </div>
             </div>
             <div class="row px-5 pb-5">
                 <div class="col-sm-0 col-md-1"></div>
-                <div class="col-md-12 col-lg-5 mr-4">
-                    <blockquote class="blockquote">
-                        <i class="fas fa-3x fa-quote-left mb-3"></i>
-                        <p class="mb-0"><span class="quote mr-2">I would recommend Kat</span> on any future programming
-                            project...She proved responsive
-                            to our needs, quality-oriented, and an effective communicator during the entirity of the
-                            project.</p>
-                        <p class="text-right"><i class="fas fa-3x fa-quote-right"></i></p>
-                        <footer class="blockquote-footer text-left"><cite title="Source Title">Cat Frazier, It's
-                                Animated Text</cite></footer>
-                    </blockquote>
+                <div class="col-md-12 col-lg-4 mr-4">
+                    {{> testimonial}}
+
                 </div>
-                <div class="col-md-12 col-lg-5 ml-4" style="max-width: auto;">
+                <div class="col-md-12 col-lg-6 ml-4" style="max-width: auto;">
                     <div><a href="https://placeholder.com"><img style="max-width:100%;height:auto;"
                                 src="https://via.placeholder.com/600x337"></a></div>
                     <div class="row mx-auto px-4 pt-5 text-center">
-                        <div class="col"><a type="button" class="btn btn-link about" id="github"
-                                target="_blank"><i class="fab fa-github mr-2"></i><span
-                                    style="font-size:14px;">GitHub</span></a></div>
-                        <div class="col"><a type="button" class="btn btn-link about"
-                                id="linkedin" target="_blank"><i
-                                    class="fab fa-linkedin-in mr-2"></i><span
-                                    style="font-size:14px;">LinkedIn</span></a></div>
-                        <div class="col"><a type="button" class="btn btn-link about" href="/resume"><i
-                                    class="fas fa-code mr-2"></i><span style="font-size:14px;">Resume</span></a></div>
+                        <div class="col"><a type="button" class="btn btn-link about" id="github" target="_blank"><i
+                                    class="fab fa-github mr-2"></i>GitHub</a></div>
+                        <div class="col"><a type="button" class="btn btn-link about" id="linkedin" target="_blank"><i
+                                    class="fab fa-linkedin-in mr-2"></i>LinkedIn</a></div>
+                        <div class="col">
+                            <a type="button" class="btn btn-link about" href="/resume"><i
+                                    class="fas fa-code mr-2"></i>Resume</a></div>
                     </div>
                 </div>
                 <div class="col-sm-0 col-md-1"></div>
@@ -52,10 +39,11 @@
             <div class="col">
                 <div class="row p-5 align-items-center">
                     <div class="col-md-12 col-lg-6" style="max-width: auto;">
-                        <img src="/assets/img/Kat_Yeary-6.jpg" style="border-radius:5%; max-width:80%;">
+                        <img src="/assets/img/Kat_Yeary-6.jpg" style="border-radius:5%; max-width:70%;">
                     </div>
                     <div class="col-md-12 col-lg-6 py-5">
-                        <div class="row text-center" style="font-size: min(max(16px, 4vw), 22px);">
+                        <div class="row text-center"
+                            style="font-family: 'Assistant', sans-serif;font-weight: 200;font-size: min(max(16px, 4vw), 22px);">
                             <p>
                                 I'm also a working stand-up comic, which I've been doing for about seven years. It's a
                                 great
@@ -64,7 +52,8 @@
                                 in that it takes about an hour a day.
                             </p>
                             <p className="text-center">
-                                I live with my fiancee Lauren, who is a tv writer and animator, and a cat. My main
+                                I live with my fiancee Lauren, who is a tv-writer and animator, and our cat, Dr. Katz.
+                                My main
                                 hobbies
                                 are
                                 learning
