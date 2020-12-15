@@ -32,6 +32,10 @@ $('#resume').on('click', function () {
     window.open('/assets/Resume_2020.pdf');
 })
 
+$('#about-resume').on('click', function () {
+    window.open('/assets/Resume_2020.pdf');
+})
+
 //Nodemailer request
 const postReq = (name, email, message) => {
     $.ajax('/mail', {
