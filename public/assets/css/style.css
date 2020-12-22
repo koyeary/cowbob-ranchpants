@@ -41,14 +41,27 @@ i {
 
 /* --- Header (Jumbotron) --- */
 
-/* .header {
-  font-size: 60px;
-} */
-
 .sub-header {
+  font-size: 22px;
+  color: #fafdff;
+}
+
+@media screen and (max-width: 360px) {
+  .sub-header {
+    font-size: 20px;
+  }
+}
+
+.by-line {
   color: #ffffff;
   font-size: 20px;
   font-weight: 200;
+}
+
+@media screen and (max-width: 360px) {
+  .by-line {
+    font-size: 17px;
+  }
 }
 
 .typewriter {
@@ -59,6 +72,12 @@ i {
   border-right: solid 3px transparent;
   white-space: nowrap;
   overflow: hidden;
+}
+
+@media screen and (max-width: 360px) {
+  .typewriter {
+    font-size: 2.35em;
+  }
 }
 
 .typewriter {
