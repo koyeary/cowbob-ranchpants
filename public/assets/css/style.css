@@ -48,7 +48,7 @@ i {
 
 @media screen and (max-width: 360px) {
   .sub-header {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -60,7 +60,7 @@ i {
 
 @media screen and (max-width: 360px) {
   .by-line {
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 
@@ -76,7 +76,7 @@ i {
 
 @media screen and (max-width: 360px) {
   .typewriter {
-    font-size: 2.35em;
+    font-size: 2.25em;
   }
 }
 
