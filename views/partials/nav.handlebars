@@ -1,4 +1,34 @@
-<nav class="navbar navbar-expand-lg top sticky-top justify-content-start d-none d-sm-block">
+{{!-- <nav class="navbar navbar-expand-lg top sticky-top justify-content-start"> --}}
+        <nav class="navbar navbar-expand-lg top sticky-top justify-content-start">
+                <div class="container-fluid">
+                        {{> sidenav}}
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                                <a class="btn btn-link toggle-color" href="https://github.com/koyeary"
+                                                        target="_blank"><i class="fab fa-github mr-3"></i>GitHub</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="btn btn-link toggle-color"
+                                                        href="https://www.linkedin.com/in/kat-yeary/" target="_blank"><i
+                                                                class="fab fa-linkedin-in mr-3"></i>LinkedIn</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="btn btn-link toggle-color" id="resume" data-toggle="tooltip"
+                                                        data-placement="right" title="Resume"><i
+                                                                class="fas fa-code mr-3"></i>Resume</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="btn btn-link toggle-color" data-toggle="modal"
+                                                        data-target="#contact"><i
+                                                                class="fas fa-paper-plane mr-2"></i>Contact Me</a>
+                                        </li>
+                                </ul>
+                        </div>
+                </div>
+        </nav>
+
+        {{!-- <nav class="navbar navbar-expand-lg top sticky-top justify-content-start d-none d-md-block">
                 <ul class="navbar-nav">
                         <li class="nav-item">
                                 <a type="button" class="btn btn-link toggle-color" href="https://github.com/koyeary"
@@ -18,6 +48,6 @@
                                                 class="fas fa-paper-plane mr-2"></i>Contact Me</a>
                         </li>
                 </ul>
-</nav>
+        </nav> --}}
 
-{{> contact }}
+        {{> contact }}
