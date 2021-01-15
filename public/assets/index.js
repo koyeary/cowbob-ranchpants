@@ -19,19 +19,19 @@ $(window).on('scroll', function () {
   );
 });
  */
-$('#github').on('click', function () {
+$('#github').on('click', () => {
   window.open('https://github.com/koyeary');
 });
 
-$('#linkedin').on('click', function () {
+$('#linkedin').on('click', () => {
   window.open('https://www.linkedin.com/in/kat-yeary/');
 });
 
-$('#resume').on('click', function () {
+$('#resume').on('click', () => {
   window.open('/assets/Resume_2020.pdf');
 });
 
-$('#about-resume').on('click', function () {
+$('#about-resume').on('click', () => {
   window.open('/assets/Resume_2020.pdf');
 });
 
