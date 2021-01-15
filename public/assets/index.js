@@ -10,7 +10,7 @@ $(window).on('scroll', function () {
   }
 });
 
-$('#contact-goto').on('click', function () {
+/* $('#contact-goto').on('click', function () {
   $('body').animate(
     {
       scrollTop: eval($('#' + $(this).attr('target')).offset().top - 70)
@@ -18,7 +18,7 @@ $('#contact-goto').on('click', function () {
     1000
   );
 });
-
+ */
 $('#github').on('click', function () {
   window.open('https://github.com/koyeary');
 });
@@ -60,26 +60,25 @@ $('.mail').on('click', (e) => {
   alert('Message sent');
   location.reload();
 });
-  /*             if(!this.form.checkbox.checked)
+/*             if(!this.form.checkbox.checked)
                 {
                     alert('You must agree to the terms first.');
                     return false;
                 } else { */
-  // Reload the page to get the updated list
-  // $('#contact').modal('hide');
+// Reload the page to get the updated list
+// $('#contact').modal('hide');
 
-  //}
-  //);
+//}
+//);
 
-  $('#toggle-sidenav').on('click', (e) => {
-    e.preventDefault();
+$('#toggle-sidenav').on('click', (e) => {
+  e.preventDefault();
 
-    $('#sidenav-show').css('width', '250px');
-  });
+  $('#sidenav-show').css('width', '250px');
+});
 
-   $('#closebtn').on('click', (e) => {
-     e.preventDefault();
+$('#closebtn').on('click', (e) => {
+  e.preventDefault();
 
-    $('#sidenav-show').css('width', '0px');
-  });
-
+  $('#sidenav-show').css('width', '0px');
+});
