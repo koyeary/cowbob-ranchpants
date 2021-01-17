@@ -22,6 +22,13 @@ i {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 575px) {
+ i {
+    font-size: 1.25rem;
+}
+}
+
+
 /* --- Navbar --- */
 
 .top {
@@ -47,23 +54,25 @@ i {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #ffffff;
   overflow-x: hidden;
   transition: 0.5s;
+  box-shadow: 0px 0 8px rgba(0, 0, 0, 0.8);
   padding-top: 60px;
 }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 1.15rem;
+  color: #0086d6;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #3cdbc1;
+  text-decoration: none;
 }
 
 .sidenav .closebtn {
@@ -138,36 +147,16 @@ i {
   }
 }
 
-/* @keyframes animated-text {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 66%;
-  }
-} */
-
 @media screen and (max-width: 1600px) {
   @keyframes animated-text {
     from {
       width: 0%;
     }
     to {
-      width: 40%;
+      width: 60%;
     }
   }
 }
-
-/* @media screen and (max-width: 975px) {
-  @keyframes animated-text {
-    from {
-      width: 0%;
-    }
-    to {
-      width:100%;
-    }
-  }
-} */
 
 @media screen and (max-width: 504px) {
   @keyframes animated-text {
@@ -256,7 +245,7 @@ i {
   }
 }
 
-/* --- About (Get to Know Me --- */
+/* --- About --- */
 
 .about {
   color: #0086d6;
@@ -265,6 +254,12 @@ i {
 .about:hover {
   color: #3cdbc1;
   text-decoration: none;
+}
+
+@media screen and (max-width: 504px) {
+  .about {
+    font-size: .5rem;
+  }
 }
 
 .toggle-color:hover {
