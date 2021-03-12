@@ -6,7 +6,7 @@ const bodyParser    = require('body-parser');
 const logger        = require('morgan');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 // View engine setup
 app.set('views', path.join(__dirname, 'views'));

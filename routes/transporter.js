@@ -1,12 +1,13 @@
-const router = require('express').Router();
-const nodemailer = require('nodemailer');
+const router         = require('express').Router();
+const nodemailer     = require('nodemailer');
 const mailController = require('../controllers/mailController');
-
-const YAHOO_USER = 'kat.yeary@yahoo.com';
-const YAHOO_PASS = 'mzmzpdixhrkgzgtw';
-
+const config         = require('config');
 
 router.get('/', mailController.index);
+
+const MAIL_USER = config.get('MAIL_USER');
+const MAIL_PASS = config.get('MAIL_PASS');
+
 // POST route from contact form
 router.post('/', (req, res, next) => {
    let transporter = nodemailer.createTransport({
@@ -14,15 +15,15 @@ router.post('/', (req, res, next) => {
     port: 465,
     secure: true,
     auth: {
-      user: YAHOO_USER,
-      pass: YAHOO_PASS
+      user: MAIL_USER,
+      pass: MAIL_PASS
     } 
   }); 
 
 
   // Specify what the email will look like
   const mailOpts = {
-    from: YAHOO_USER, // This is ignored by Gmail
+    from: MAIL_USER, // This is ignored by Gmail
     to: 'katyeary@gmail.com',
     subject: `Message from ${req.body.name} through your portfolio`,
     text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
