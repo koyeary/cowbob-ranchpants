@@ -75,6 +75,7 @@ $('#toggle-sidenav').on('click', (e) => {
   e.preventDefault();
 
   $('#sidenav-show').css('width', '250px');
+  
 });
 
 $('#closebtn').on('click', (e) => {
